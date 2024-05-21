@@ -91,6 +91,7 @@ def list_model_elements():
         'no_mul_mat_q',
         'n_gpu_layers',
         'tensor_split',
+        'rpc_servers',
         'n_ctx',
         'gpu_split',
         'max_seq_len',
@@ -106,7 +107,6 @@ def list_model_elements():
         'streaming_llm',
         'attention_sink_size',
         'hqq_backend',
-        'rpc_servers',
     ]
     if is_torch_xpu_available():
         for i in range(torch.xpu.device_count()):
