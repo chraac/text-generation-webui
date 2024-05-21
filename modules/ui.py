@@ -99,6 +99,7 @@ def list_model_elements():
         'no_mul_mat_q',
         'n_gpu_layers',
         'tensor_split',
+        'rpc_servers',
         'n_ctx',
         'gpu_split',
         'max_seq_len',
@@ -115,7 +116,6 @@ def list_model_elements():
         'attention_sink_size',
         'hqq_backend',
         'cpp_runner',
-        'rpc_servers',
     ]
 
     if is_torch_xpu_available():
