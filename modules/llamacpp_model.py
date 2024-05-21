@@ -97,7 +97,8 @@ class LlamaCppModel:
             'rope_freq_scale': 1.0 / shared.args.compress_pos_emb,
             'offload_kqv': not shared.args.no_offload_kqv,
             'split_mode': 1 if not shared.args.row_split else 2,
-            'flash_attn': shared.args.flash_attn
+            'flash_attn': shared.args.flash_attn,
+            'rpc_servers': shared.args.rpc_servers,
         }
 
         result.model = Llama(**params)
