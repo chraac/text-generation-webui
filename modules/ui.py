@@ -115,6 +115,7 @@ def list_model_elements():
         'attention_sink_size',
         'hqq_backend',
         'cpp_runner',
+        'rpc_servers',
     ]
 
     if is_torch_xpu_available():

@@ -193,7 +193,8 @@ class LlamacppHF(PreTrainedModel):
             'logits_all': shared.args.logits_all,
             'offload_kqv': not shared.args.no_offload_kqv,
             'split_mode': 1 if not shared.args.row_split else 2,
-            'flash_attn': shared.args.flash_attn
+            'flash_attn': shared.args.flash_attn,
+            'rpc_servers': shared.args.rpc_servers,
         }
 
         if shared.args.cache_4bit:
