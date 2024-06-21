@@ -28,8 +28,6 @@ except:
 def llama_cpp_lib():
     if shared.args.cpu and llama_cpp is not None:
         return llama_cpp
-    elif shared.args.rpc_servers and llama_cpp is not None:
-        return llama_cpp
     elif shared.args.tensorcores and llama_cpp_cuda_tensorcores is not None:
         return llama_cpp_cuda_tensorcores
     elif llama_cpp_cuda is not None:
