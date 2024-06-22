@@ -34,7 +34,6 @@ loaders_and_params = OrderedDict({
         'cache_8bit',
         'cache_4bit',
         'tensor_split',
-        'rpc_servers',
         'n_batch',
         'threads',
         'threads_batch',
@@ -51,6 +50,7 @@ loaders_and_params = OrderedDict({
         'flash_attn',
         'streaming_llm',
         'attention_sink_size',
+        'rpc_servers',
     ],
     'llamacpp_HF': [
         'n_ctx',
@@ -58,7 +58,6 @@ loaders_and_params = OrderedDict({
         'cache_8bit',
         'cache_4bit',
         'tensor_split',
-        'rpc_servers',
         'n_batch',
         'threads',
         'threads_batch',
@@ -80,6 +79,7 @@ loaders_and_params = OrderedDict({
         'streaming_llm',
         'attention_sink_size',
         'llamacpp_HF_info',
+        'rpc_servers',
     ],
     'ExLlamav2_HF': [
         'gpu_split',
